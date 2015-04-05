@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'finder/index'
+
+  get 'finder/alphabetized'
+
+  get 'finder/missing_email'
+
   resources :customers
   
   

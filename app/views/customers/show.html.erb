@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Image:</strong>
+  <%= @customer.image %>
+</p>
+
+<p>
   <strong>Phone:</strong>
   <%= @customer.phone %>
 </p>
@@ -15,15 +20,11 @@
   <%= @customer.email %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @customer.image %>
-</p>
 
 <p>
   <strong>Notes:</strong>
   <%= @customer.notes %>
 </p>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<!--<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>-->
