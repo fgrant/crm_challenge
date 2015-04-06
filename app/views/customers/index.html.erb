@@ -2,10 +2,10 @@
 
 <h1>All Customers</h1>
 
-<%= link_to 'New Customer', new_customer_path %>
+<div id = "link"><%= link_to 'New Customer', new_customer_path %></div>
 
-<table>
-  <!--
+<!--<table>
+  
   <thead>
     <tr>
       <th>Full name</th>
@@ -19,14 +19,16 @@
 
  <!-- <tbody>-->
     <% @customers.each do |customer| %>
-      <br>
-       <strong> <%= customer.full_name %></strong><br>
+    <div id = a_customer>
+     <br>
+     <div id=name> <%= customer.full_name %></div><br>
        <%= image_tag customer.image %><br>
        <strong>Phone:</strong> <%= customer.phone %><br></strong>
        <strong>Email:</strong> <%= customer.email %><br></strong>
-       <strong>Notes:</strong> <%= customer.notes %><br></strong></strong>
-        <br>
-        
+       <strong>Notes:</strong> <%= customer.notes %><br></strong>
+       <br>
+       
+        </div>
         
         
         
@@ -37,6 +39,5 @@
  
     <% end %>
   <!--</tbody>
-</table>-->
-<br>
+</table>--><br>
 
